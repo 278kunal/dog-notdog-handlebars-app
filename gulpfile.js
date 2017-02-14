@@ -1,8 +1,8 @@
 var gulp = require('gulp'),
-    watch = require('./gulp/watch'),
-    templates = require('./gulp/templates');
-    lint = require('./gulp/lint');
-    server = require('./gulp/server');
+    watch = require('./tasks/watch'),
+    templates = require('./tasks/templates');
+    lint = require('./tasks/lint');
+    server = require('./tasks/server');
 
 gulp.task('templates',templates);
 
