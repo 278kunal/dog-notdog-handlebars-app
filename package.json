@@ -1,0 +1,28 @@
+{
+  "name": "dog-notdog-handlebars-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-declare": "^0.3.0",
+    "gulp-handlebars": "^4.0.0",
+    "gulp-wrap": "^0.13.0",
+    "merge-stream": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/278kunal/dog-notdog-handlebars-app.git"
+  },
+  "author": "Kunal Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/278kunal/dog-notdog-handlebars-app/issues"
+  },
+  "homepage": "https://github.com/278kunal/dog-notdog-handlebars-app#readme"
+}

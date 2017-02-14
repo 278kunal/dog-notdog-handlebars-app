@@ -1,17 +1,10 @@
 (function() {
 
-  registerPartials();
   renderPage();
   renderDogs();
 
-  function registerPartials() {
-    Handlebars.registerPartial('dog', $('#dog-template').html());
-  }
-
   function renderPage() {
-    var template = $('#index-template').html(),
-        compiled = Handlebars.compile(template),
-        rendered = compiled(window.language);
+    var rendered = App.templates.index(window.language);
     $('#main').html(rendered);
 
     $('#languageSwitch').click(function() {
@@ -21,39 +14,35 @@
   }
 
   function renderDogs() {
-    var template = $('#dogs-template').html(),
-        compiled = Handlebars.compile(template),
-        filteredDogs = DogPack.getFilteredDogs(DogPack.dogs),
-        rendered = compiled({ 
-          dogs: DogPack.getPaginatedDogs(filteredDogs), 
-          language: window.language 
+    var filteredDogs = DogPack.getFilteredDogs(DogPack.dogs),
+        rendered = App.templates.dogs({
+          dogs: DogPack.getPaginatedDogs(filteredDogs),
+          language: window.language
         });
     $('#theDogs').html(rendered);
     attachDogButtons();
     renderPages(filteredDogs);
     renderScore();
   }
-  
+
   function renderScore() {
-    var template = $('#score-template').html(),
-        compiled = Handlebars.compile(template),
-        rendered= compiled({
+    var rendered = App.templates.score({
           dogs: DogPack.dogs,
           language: window.language
         });
-      $('#score').html(rendered);
-      $('#score').find('small').click(function(){
+    $('#score').html(rendered);
+    $('#score').find('small').click(function() {
       DogPack.clearDogs();
-      window.location.href = '?' + Handlebars.helpers.getLanguageFilter(window.language.langId)
-    })
+      window.location.href = '?' +
+        Handlebars.helpers.getLanguageFilter(window.language.langId);
+    });
   }
-  
-  function renderPages(dogs){
-    var template = $('#page-template').html();
-        compiled = Handlebars.compile(template);
-        rendered = compiled({ dogs: dogs});
+
+  function renderPages(dogs) {
+    var rendered = App.templates.page({ dogs: dogs });
     $('#pagination').html(rendered);
   }
+
   function attachDogButtons() {
     $('.dog-button').click(function() {
       var id = $(this).closest('.dog-card').data('dog-id');
