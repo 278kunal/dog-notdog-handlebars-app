@@ -6,4 +6,4 @@ gulp.task('templates',templates);
 
 gulp.task('watch',watch);
 
-gulp.task('start', ['templates','watch']);
+gulp.task('serve', ['templates','watch']);
