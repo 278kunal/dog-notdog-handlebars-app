@@ -11,6 +11,7 @@
     "gulp-declare": "^0.3.0",
     "gulp-handlebars": "^4.0.0",
     "gulp-jshint": "^2.0.4",
+    "gulp-livereload": "^3.8.1",
     "gulp-rename": "^1.2.2",
     "gulp-uglify": "^2.0.1",
     "gulp-wrap": "^0.13.0",
