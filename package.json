@@ -5,11 +5,18 @@
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.2",
     "gulp-concat": "^2.6.1",
+    "gulp-csslint": "^1.0.0",
     "gulp-declare": "^0.3.0",
     "gulp-handlebars": "^4.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.1",
     "gulp-wrap": "^0.13.0",
-    "merge-stream": "^1.0.1"
+    "jshint": "^2.9.4",
+    "merge-stream": "^1.0.1",
+    "streamqueue": "^1.1.1"
   },
   "devDependencies": {
     "json-server": "^0.9.5"

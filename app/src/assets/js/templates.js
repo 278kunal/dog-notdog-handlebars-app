@@ -19,7 +19,7 @@ Handlebars.registerPartial("dog", Handlebars.template({"1":function(depth0,helpe
 
   return "<div class=\"mdl-card mdl-shadow--2dp dog-card\" data-dog-id=\""
     + alias3(((helper = (helper = helpers.id || (depth0 != null ? depth0.id : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"id","hash":{},"data":data}) : helper)))
-    + "\">\n    <div class=\"mdl-card__title mdl-card--expand\" style=\"background: url('images/"
+    + "\">\n    <div class=\"mdl-card__title mdl-card--expand\" style=\"background: url('app/dist/img/"
     + alias3(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"image","hash":{},"data":data}) : helper)))
     + "') center 15% no-repeat #46B6AC;\">\n        <h2 class=\"mdl-card__title-text\">"
     + alias3(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"name","hash":{},"data":data}) : helper)))
@@ -73,7 +73,7 @@ this["App"]["templates"]["index"] = Handlebars.template({"compiler":[6,">= 2.0.0
     + alias3(((helper = (helper = helpers.languageFilter || (depth0 != null ? depth0.languageFilter : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"languageFilter","hash":{},"data":data}) : helper)))
     + "\n  </button>\n</div>\n<div class=\"mdl-layout__content\">\n    <a name=\"top\"></a>\n    <div class=\"mdl-typography--text-center\">\n        <h1>"
     + alias3(((helper = (helper = helpers.siteTitle || (depth0 != null ? depth0.siteTitle : depth0)) != null ? helper : alias1),(typeof helper === alias2 ? helper.call(depth0,{"name":"siteTitle","hash":{},"data":data}) : helper)))
-    + "</h1>\n    </div>\n    <div id=\"theDogs\"></div>\n    <div id=\"pagination\"></div>\n    <footer class=\"mdl-mega-footer\">\n        <div class=\"mdl-mega-footer--top-section\">\n            <p class=\"mdl-typography--font-light\">© 2015 Ryan Lewis</p>\n        </div>\n    </footer>\n</div>\n";
+    + "</h1>\n    </div>\n    <div id=\"theDogs\"></div>\n    <div id=\"pagination\"></div>\n    <footer class=\"mdl-mega-footer\">\n        <div class=\"mdl-mega-footer--top-section\">\n            <p class=\"mdl-typography--font-light\">© 2017 Kunal Singh</p>\n        </div>\n    </footer>\n</div>\n";
 },"useData":true});
 this["App"]["templates"]["page"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
     var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;

@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 
 module.exports = function() {
     //partials stream
-    var partials = gulp.src('./templates/_*.hbs')
+    var partials = gulp.src('./app/src/templates/partials/_*.hbs')
         //handlebars
         .pipe(handlebars())
         //wrap inline javascript
@@ -21,7 +21,7 @@ module.exports = function() {
         }));
 
     //templates stream
-    var templates = gulp.src('./templates/[^_]*.hbs')
+    var templates = gulp.src('./app/src/templates/[^_]*.hbs')
         //handlebars
         .pipe(handlebars())
         //wrap
@@ -37,5 +37,5 @@ module.exports = function() {
         //concat
         .pipe(concat('templates.js'))
         //build
-        .pipe(gulp.dest('./build/js/'));
+        .pipe(gulp.dest('./app/src/assets/js/'));
 };

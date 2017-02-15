@@ -1,5 +1,9 @@
 var gulp = require('gulp');
 
 module.exports = function() {
-  gulp.watch('./templates/*.hbs', ['templates']);
+  gulp.watch('./app/src/templates/*.hbs', ['templates']);
+  gulp.watch('./app/src/assets/js/*.js', ['js']);
+  gulp.watch('./app/src/assets/css/*.css', ['css']);
+  gulp.watch('./app/src/assets/img/*', ['img']);
+  gulp.watch('./app/src/assets/fonts/*', ['fonts']);
 };
