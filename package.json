@@ -16,14 +16,17 @@
     "gulp-uglify": "^2.0.1",
     "gulp-wrap": "^0.13.0",
     "jshint": "^2.9.4",
-    "merge-stream": "^1.0.1",
     "json-server": "^0.9.5",
+    "merge-stream": "^1.0.1",
     "streamqueue": "^1.1.1"
   },
   "devDependencies": {
+    "concurrently": "^3.3.0"
   },
   "scripts": {
-    "start":"gulp build",
+    "build": "gulp build",
+    "start": "node server.js",
+    "dev":"concurrently --kill-others \"npm run build\" \"npm start\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
