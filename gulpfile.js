@@ -21,4 +21,4 @@ gulp.task('watch',watch);
 
 gulp.task('server',server);
 
-gulp.task('build', ['server','templates','js','css','img','fonts','watch']);
+gulp.task('build', ['templates','js','css','img','fonts','watch','server']);
