@@ -1,8 +1,8 @@
 {
-  "name": "handlebars-app",
+  "name": "dog-notdog-handlebars-app",
   "version": "0.0.0",
   "authors": [
-    "Ryan Lewis <ryanharrisonlewis@gmail.com>"
+    "Kunal Singh <278kunal@gmail.com>"
   ],
   "license": "MIT",
   "ignore": [

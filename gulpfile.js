@@ -4,8 +4,7 @@ var gulp = require('gulp'),
     js = require('./tasks/js'),
     css = require('./tasks/css'),
     img = require('./tasks/img'),
-    fonts = require('./tasks/fonts'),
-    server = require('./tasks/server');
+    fonts = require('./tasks/fonts');
 
 gulp.task('templates',templates);
 
@@ -19,6 +18,4 @@ gulp.task('fonts',fonts);
 
 gulp.task('watch',watch);
 
-gulp.task('server',server);
-
-gulp.task('build', ['templates','js','css','img','fonts','watch']);
+gulp.task('build', ['js','css','img','fonts','watch']);

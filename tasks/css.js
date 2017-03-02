@@ -9,5 +9,5 @@ module.exports = function() {
     .pipe(csslint())
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(rename('styles.min.css'))
-    .pipe(gulp.dest('./app/dist/css/'));;
+    .pipe(gulp.dest('./app/dist/css/'));
 };

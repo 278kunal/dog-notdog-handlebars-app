@@ -1,3 +1,20 @@
+this["App"] = this["App"] || {};
+this["App"]["templates"] = this["App"]["templates"] || {};
+this["App"]["templates"]["dogs"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = this.invokePartial(partials.dog,depth0,{"name":"dog","hash":{"language":((stack1 = (data && data.root)) && stack1.language)},"data":data,"indent":"  ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
+},"3":function(depth0,helpers,partials,data) {
+    var stack1;
+
+  return "  "
+    + this.escapeExpression(this.lambda(((stack1 = (depth0 != null ? depth0.language : depth0)) != null ? stack1.noDogsMessage : stack1), depth0))
+    + "\r\n";
+},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.dogs : depth0),{"name":"each","hash":{},"fn":this.program(1, data, 0),"inverse":this.program(3, data, 0),"data":data})) != null ? stack1 : "");
+},"usePartial":true,"useData":true});
 Handlebars.registerPartial("dog", Handlebars.template({"1":function(depth0,helpers,partials,data) {
     var stack1;
 
@@ -35,23 +52,6 @@ Handlebars.registerPartial("dog", Handlebars.template({"1":function(depth0,helpe
     + ((stack1 = helpers['if'].call(depth0,(depth0 != null ? depth0.chosen : depth0),{"name":"if","hash":{},"fn":this.program(1, data, 0),"inverse":this.noop,"data":data})) != null ? stack1 : "")
     + "</div>\r\n";
 },"useData":true}));
-this["App"] = this["App"] || {};
-this["App"]["templates"] = this["App"]["templates"] || {};
-this["App"]["templates"]["dogs"] = Handlebars.template({"1":function(depth0,helpers,partials,data) {
-    var stack1;
-
-  return ((stack1 = this.invokePartial(partials.dog,depth0,{"name":"dog","hash":{"language":((stack1 = (data && data.root)) && stack1.language)},"data":data,"indent":"  ","helpers":helpers,"partials":partials})) != null ? stack1 : "");
-},"3":function(depth0,helpers,partials,data) {
-    var stack1;
-
-  return "  "
-    + this.escapeExpression(this.lambda(((stack1 = (depth0 != null ? depth0.language : depth0)) != null ? stack1.noDogsMessage : stack1), depth0))
-    + "\r\n";
-},"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    var stack1;
-
-  return ((stack1 = helpers.each.call(depth0,(depth0 != null ? depth0.dogs : depth0),{"name":"each","hash":{},"fn":this.program(1, data, 0),"inverse":this.program(3, data, 0),"data":data})) != null ? stack1 : "");
-},"usePartial":true,"useData":true});
 this["App"]["templates"]["index"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
     var helper, alias1=helpers.helperMissing, alias2="function", alias3=this.escapeExpression;
 
